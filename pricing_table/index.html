@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img width="100px" height="100px" src="https://img.freepik.com/premium-vector/as-logo-design_705304-234.jpg?w=360">
+        </div>
+        <h1>Tech Is Over Heart</h1>
+    </header>
+
+    <nav>
+        <button id="menu-toggle">☰</button>
+        <ul id="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Customer Service</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="pricing">
+            <h2>Product List</h2>
+            <p>Everything you need to capture.</p>
+            <div class="currency-selector">
+                <label for="currency">Choose a currency: </label>
+                <select id="currency" onchange="changeCurrency(this.value)">
+                    <option value="rupees">Rupees</option>
+                    <option value="usd">USD</option>
+                    <option value="euro">Euro</option>
+                </select>
+            </div>
+            <div class="plans">
+                <div class="plan">
+                    <img width="250px" height="250px" alt="RTX 4090 img" src="https://m.media-amazon.com/images/I/711vU2IrEuL._SL1500_.jpg">
+                    <h3>RTX 4090</h3>
+                    <p class="price" data-price-rupees="₹1,58,000" data-price-usd="$2,100" data-price-euro="€1,800">₹1,58,000</p>
+                    <p>GIGABYTE GeForce RTX 4090 Gaming OC 24G Graphics Card, 3X Wind Force Fans, 24GB 384-Bit GDDR6X</p>
+                    <button>Buy Now</button>
+                </div>
+              
+                <div class="plan">
+                    <img width="250px" height="250px" alt="Mac Studio Img" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-studio-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684345161143" >
+                    <h3>MAC Studio</h3>
+                    <p class="price"  data-price-rupees="₹4,19,900" data-price-usd="$5,020" data-price-euro="€4,682">₹4,19,900</p>
+                    <p>24-Core CPU,
+                        60-Core GPU,
+                        32-Core Neural Engine</p>
+                        <button>Buy Now</button>
+            </div>
+
+            <div class="plan">
+                <img width="250px" height="250px" alt="SSD Img" src="https://m.media-amazon.com/images/I/61NqEHT-e1L._SL1500_.jpg">
+                <h3>Samsung 980 pro</h3>
+                <p class="price"  data-price-rupees="₹ 12,900" data-price-usd="$ 154" data-price-euro="€ 143">₹ 12,900"</p>
+                <p>Samsung 980 PRO 1TB PCIe 4.0 NVME M.2 SSD (MZ-V8P1T0BW)</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="plan">
+                <img width="250px" height="250px" alt="SSD Img" src="https://m.media-amazon.com/images/I/61NqEHT-e1L._SL1500_.jpg">
+                <h3>Samsung 980 pro</h3>
+                <p class="price"  data-price-rupees="₹ 12,900" data-price-usd="$ 154" data-price-euro="€ 143">₹ 12,900"</p>
+                <p>Samsung 980 PRO 1TB PCIe 4.0 NVME M.2 SSD (MZ-V8P1T0BW)</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="plan">
+                <img width="250px" height="250px" alt="Intel i9 Img" src="https://m.media-amazon.com/images/I/61jRMCAX4CL._SL1500_.jpg">
+                <h3>Intel Core I9-14900K Processor</h3>
+                <p class="price" data-price-rupees="₹62,990" data-price-usd="$753" data-price-euro="€702.78">₹62,990</p>
+                <p>Intel Core I9-14900K LGA 1700 New Gaming Desktop Processor 24 Cores (8 P-Cores + 16 E-Cores) with Integrated Graphics - Unlocked</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="plan">
+                <img width="250px" height="250px" alt="SSD Img" src="https://m.media-amazon.com/images/I/81CpgF-+P4L._SL1500_.jpg">
+                <h3>ASUS ROG Maximus Z790 Hero</h3>
+                <p class="price" data-price-rupees="₹83,599" data-price-usd="$1,000" data-price-euro="€932.71">₹83,599</p>
+                <p>ASUS ROG Maximus Z790 Hero (WiFi 6E) LGA 1700(Intel®13th&12th Gen) ATX Gaming Motherboard(PCIe 5.0,DDR5,20+1power Stages,2.5Gb LAN, Bluetooth V5.2,2X Thunderbolt 4 Ports,5xM.2)</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="plan">
+                <img width="250px" height="250px" alt="SSD Img" src="https://dlcdnwebimgs.asus.com/gain/9E1FA5D0-65AB-4188-84DE-A80058422939/w717/h525">
+                <h3>ASUS ROG Strix Scope II 96 Wireless Gaming Keyboard</h3>
+                <p class="price" data-price-rupees="₹41,000" data-price-usd="$490" data-price-euro="€457.3">₹41,000</p>
+                <p>ASUS ROG Strix Scope II 96 Wireless Gaming Keyboard, Three-Mode Connection, Shock Absorbing Foam and Switch Dampening Pads, Hot Swappable Pre-Lubricated ROG NX Snow Switches, PBT Keycaps, RGB-Black</p>
+                <button>Buy Now</button>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://github.com/aarshabh8171"><img width="50px" height="50px" src="https://pngimg.com/uploads/github/github_PNG20.png"></a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
